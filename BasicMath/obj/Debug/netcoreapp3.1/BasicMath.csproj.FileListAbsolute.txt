@@ -1,0 +1,13 @@
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.exe
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.deps.json
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.runtimeconfig.json
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.runtimeconfig.dev.json
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.dll
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\bin\Debug\netcoreapp3.1\BasicMath.pdb
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.csprojAssemblyReference.cache
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.AssemblyInfoInputs.cache
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.AssemblyInfo.cs
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.csproj.CoreCompileInputs.cache
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.dll
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.pdb
+C:\Users\shivam01\Desktop\BasicMath\BasicMath\obj\Debug\netcoreapp3.1\BasicMath.genruntimeconfig.cache
