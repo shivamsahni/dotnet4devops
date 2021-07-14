@@ -4,6 +4,7 @@ FROM mcr.microsoft.com/dotnet/core/runtime:3.1-buster-slim AS base
 WORKDIR /app
 
 COPY BasicMath/BasicMath.csproj ./
+COPY --from=base /app/out .
 RUN dotnet restore
 
 COPY . ./
