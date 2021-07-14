@@ -25,7 +25,7 @@ namespace BasicMath
         public double Multiply(double num1, double num2)
         {
             // to trace error while testing, writing + opertaor instead of * operator
-            return num1 + num2;
+            return num1 * num2;
         }
     }
 

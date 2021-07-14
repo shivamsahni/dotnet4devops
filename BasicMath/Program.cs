@@ -6,7 +6,8 @@ namespace BasicMath
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello NAGP!");
+            Console.Read();
         }
     }
 }
