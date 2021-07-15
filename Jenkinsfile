@@ -85,7 +85,7 @@ pipeline {
         stage('Docker Deployment'){
             steps{
                 echo "Docker Deployment by using docker hub's image"
-                bat "docker run --name basicmathapp ${registry}:${BUILD_NUMBER}"
+                bat "docker run --name basicmathapp_${BUILD_NUMBER} ${registry}:${BUILD_NUMBER}"
             }
         }
         
