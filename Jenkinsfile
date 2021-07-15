@@ -65,7 +65,7 @@ pipeline {
             steps{
                 echo "Docker Image creation step"
                 bat "dotnet publish -c Release"
-                bat "docker build -t localimageof_${username} --no-cache -f Dockerfile ."
+                bat "docker build -t localimageof_${username} --no-cache -f Dockerfile .\BasicMath\"
             }
         }
         stage('Move Image to Docker Hub'){
