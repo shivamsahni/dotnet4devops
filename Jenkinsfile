@@ -37,7 +37,7 @@ pipeline {
             steps {
                 echo 'SonarQube Analysis'
                 withSonarQubeEnv('Test_Sonar'){
-                    bat "${sonar}\\SonarScanner.MSBuild.exe begin /k:shivamnagp2 /n:shivamnagp /v:1.0"
+                    bat "${sonar}\\SonarScanner.MSBuild.exe begin /k:sonar-shivam01 /n:sonar-shivam01 /v:1.0"
                 }
             }
         }
