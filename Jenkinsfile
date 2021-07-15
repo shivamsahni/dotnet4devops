@@ -11,7 +11,12 @@ pipeline {
     
     options {
       timestamps()
-      timeout(activity: true, time: 1)
+      timeout(activity: true, time: 1, unit: 'HOURS')
+      skipDefaultCheckout()
+      buildDiscarder(logRotator(
+          numToKeepStr:'3',
+          daysToKeepStr:'5'
+      ))      
     }
     
     stages {
