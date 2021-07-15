@@ -12,4 +12,4 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/runtime:3.1-buster-slim
 WORKDIR /app
 COPY --from=base /app/out .
-ENTRYPOINT [dotnet, "BasicMath.dll"]
+ENTRYPOINT ["BasicMath.exe"]
