@@ -7,6 +7,7 @@ pipeline {
         properties = null
         docker_port = null
         username = 'shivamsahni'
+        userid = 'shivam01'
     }
     
     options {
@@ -70,13 +71,13 @@ pipeline {
             steps{
                 echo "Docker Image creation step"
                 bat "dotnet publish -c Release"
-                bat "docker build -t localimageof_${username} --no-cache -f ./BasicMath/Dockerfile ."
+                bat "docker build -t i-${userid}-master --no-cache -f ./BasicMath/Dockerfile ."
             }
         }
         stage('Move Image to Docker Hub'){
             steps{
                 echo "Move Image to a registry, Docker Hub"
-                bat "docker tag localimageof_${username} ${registry}:${BUILD_NUMBER}"
+                bat "docker tag i-${userid}-master ${registry}:${BUILD_NUMBER}"
                 withDockerRegistry([credentialsId: 'DockerHub', url: ""]){
                     bat "docker push ${registry}:${BUILD_NUMBER}"
                 }
@@ -85,7 +86,7 @@ pipeline {
         stage('Docker Deployment'){
             steps{
                 echo "Docker Deployment by using docker hub's image"
-                bat "docker run --name basicmathapp_${BUILD_NUMBER} ${registry}:${BUILD_NUMBER}"
+                bat "docker run --name c-${userid}-master ${registry}:${BUILD_NUMBER}"
             }
         }
         
