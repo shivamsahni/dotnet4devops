@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment{
-        sonar = tool name: 'sonar_msbuild'
+        sonar = tool name: 'sonar_scanner_dotnet'
         registry = 'shivamsahni/basicmath'
         properties = null
         docker_port = null
@@ -35,7 +35,7 @@ pipeline {
         stage('SonarQube Start') {
             steps {
                 echo 'SonarQube Analysis'
-                withSonarQubeEnv('sonar'){
+                withSonarQubeEnv('Test_Sonar'){
                     bat "${sonar}\\SonarScanner.MSBuild.exe begin /k:shivamnagp2 /n:shivamnagp /v:1.0"
                 }
             }
@@ -61,7 +61,7 @@ pipeline {
         stage('SonarQube Stop') {
             steps {
                 echo 'Stop SonarQube Analysis'
-                withSonarQubeEnv('sonar'){
+                withSonarQubeEnv('Test_Sonar'){
                     bat "${sonar}\\SonarScanner.MSBuild.exe end"
                 }
             }
